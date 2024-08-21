@@ -18,5 +18,4 @@ void main()
     {
      printf("both are equal wealthier");
     }
-
 }
