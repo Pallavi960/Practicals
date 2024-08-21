@@ -1,29 +1,11 @@
-#include <stdio.h>
-int main()
+#include<stdio.h>
+//program to convert temprature
+void main()
 {
-       int a, b;
-       char n;
-       printf("enter the number : ");
-       scanf("%d", &a);
-       printf("enter the number: ");
-       scanf("%d", &b);
-       printf(" enter'+'for addition\nenter '-' for substraction\nenter'*'for multiplication\nenter'/'for division\n");
-       scanf(" %c", &n);
-       switch (n)
-       {
-       case '+':
-              printf("ans is:%d", a + b);
-              break;
-       case '-':
-              printf("ans is:%d", a - b);
-              break;
-       case '*':
-              printf("ans is:%d", a * b);
-              break;
-       case '/':
-              printf("ans is:%d", a / b);
-              break;
-       deafult:
-              printf("invalid ");
-       }
+  int celsius;
+  printf("enter the temprature in cessius:");
+  scanf("%d",&celsius);
+  float fahrenheit;
+  fahrenheit=(celsius*9/5)+32;//formula to convert temprature
+  printf(" temprature in fahrenheit :%f",fahrenheit);
 }
