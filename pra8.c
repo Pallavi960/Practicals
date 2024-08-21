@@ -1,12 +1,12 @@
 #include<stdio.h>
 //name:pallavi verulkar
 //Id:24TEIOT
-int main()
+void main()
 {
-    int burger=150,pizza=100,pasta=120,sandwich=100,french_fries=80;
-    int total=0;
-
-    int i;
+    int burger=150,pizza=100,pasta=120,sandwich=100,french_fries=80,total=0,i;
+    printf("enter the numbers of items\n");
+    printf("enter 1 for berger\n enter 2 for pizza\n enter 3 for pasta\n enter 4 for sandwich \n enter 5 for french_fries");
+    //if you don't want to order another item enter 0
     x:
     scanf("%d",&i);
     switch(i)
@@ -34,5 +34,4 @@ int main()
               goto x;
 
     }
-    return 0;
 }
