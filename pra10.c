@@ -7,9 +7,8 @@ void main()
   printf("countdown:\n");
   for(i=n;i>=0;i--)
   {
-    printf("%d\n",n);
-
-
+    printf("%d\n",i);
+    sleep(i);
   }
   printf("countdown completed");
 }
