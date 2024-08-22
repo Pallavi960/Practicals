@@ -1,22 +1,17 @@
-#include<stdio.h>
+#include <stdio.h>
 void main()
 {
- int i,j;
-   for(i=1;i<=5;i++)
- {
-   for(j=1;j<=i;j++)
- {
-   if(j%2==0)
-
- {
-     printf("1");
- }
-   else
- {
-     printf("0");
- }
- }
-  printf("\n");
- }
-
+  int v, h, i, j;
+  printf("enter the size of table vertcally:");
+  scanf("%d", &v);
+  printf("enter the size of table horizontally:");
+  scanf("%d", &h);
+  for (i = 1; i <= v; i++)
+  {
+    for (j = 1; j <= h; j++)
+    {
+      printf("%3d", i * j);
+    }
+    printf("\n");
+  }
 }
